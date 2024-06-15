@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     marginTop: 80,
     marginBottom: 20,
     backgroundColor: '#fff',
+    padding:20
   },
   latestProductHeader: {
     marginTop: 0,
@@ -71,9 +72,10 @@ const styles = StyleSheet.create({
   shortAbout: {
     marginTop: 100,
     marginBottom: 80,
+    padding:20,
   },
   shortAboutTitle: {
-    fontSize: 28,
+    fontSize: 30,
   },
   shortAboutContent: {
     marginTop: 50,
@@ -88,6 +90,12 @@ const styles = StyleSheet.create({
   },
   buttonReadMore: {
     marginTop: 20,
+  },
+
+  image: {
+    height: 200,
+    width: 300,
+    resizeMode: 'cover', // Other options: 'cover', 'stretch', 'repeat', 'center'
   },
 });
 

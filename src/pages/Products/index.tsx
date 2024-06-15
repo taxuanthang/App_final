@@ -13,7 +13,16 @@ const Products = () => {
   const [categoryActive, setCategoryActive] = useState("");
 
   useEffect(() => {
-    fetchData(url);
+    fetchData(url)
+    .then((res) => {
+      res.json()
+    })
+      .then(json => {
+        setData(json);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }, [url, pageActive]);
 
   const fetchData = async (url) => {

@@ -3,6 +3,7 @@ import { View, Text, Image, ScrollView, FlatList,TouchableOpacity  } from 'react
 import HrLine from "../../Components/HorizontalLine";
 import styles from "./style"
 import ContactButton from '../../Components/ContactButton';
+import Icons from 'react-native-vector-icons/FontAwesome';
 const backgroundUrl = 'https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/about-heading.jpg';
 
 const teamMembers = [

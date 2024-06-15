@@ -94,6 +94,9 @@ const styles = StyleSheet.create({
   buttonReadMore: {
     marginTop: 20,
   },
+  troll:{
+    padding:60,
+  },
 });
 
 export default styles;

@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     activeCategory: {
       borderBottomWidth: 2,
-      borderBottomColor: "#000",
+      borderBottomColor: "#F33F3F",
     },
     productItem: {
       flex: 1,

@@ -28,7 +28,7 @@ const Home = ({}) => {
 
   return (
     <ScrollView>
-      <SwiperComp />
+      {/* <SwiperComp /> */}
       <View style={styles.latestProduct}>
         <View style={styles.latestProductHeader}>
           <View>
@@ -36,7 +36,7 @@ const Home = ({}) => {
           </View>
           <View style={styles.latestProductHeaderButton}>
             {/* <FontAwesome name="chevron-right" size={20} /> */}
-            <TouchableOpacity onPress={() => {navigation.navigate('About')}}>
+            <TouchableOpacity onPress={() => {navigation.navigate('Products')}}>
               <Text style={styles.latestProductHeaderButtonText}>VIEW ALL PRODUCTS</Text>
             </TouchableOpacity>
           </View>
@@ -61,6 +61,13 @@ const Home = ({}) => {
         <View >
           <Text style={styles.shortAboutTitle}>About Sixteen Clothing</Text>
         </View>
+        <View style={styles.container}>
+          <Image
+            source={require('G:/web_design/HTMl/finalapp/assest/images/home.jpg')}
+            style={styles.image}
+          />
+        </View>
+
         <HrLine />
         <View style={styles.shortAboutContent}>
           <View>
@@ -75,12 +82,7 @@ const Home = ({}) => {
               <Text>• Expert customer service</Text>
               <Text>• Competitive prices and special offers</Text>
             </View>
-            <Button title="Read More" onPress={() => {}} />
-          </View>
-          <View >
-            <Image
-              source={{ uri: "https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/feature-image.jpg" }}
-            />
+            <Button title="Read More" onPress={() => {navigation.navigate('About')}} color={'red'}/>
           </View>
         </View>
       </View>
